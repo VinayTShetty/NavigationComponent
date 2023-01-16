@@ -24,5 +24,9 @@
             app:destination="@id/frist"
             app:enterAnim="@android:anim/fade_in"
             app:exitAnim="@android:anim/fade_out" />
+        <argument
+            android:name="number"
+            app:argType="integer"
+        />
     </fragment>
 </navigation>
