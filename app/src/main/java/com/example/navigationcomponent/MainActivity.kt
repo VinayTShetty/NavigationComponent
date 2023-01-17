@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         navController=findNavController(R.id.fragment)
         drawerLayout=findViewById(R.id.drawerLayout)
         appBarConfigaration= AppBarConfiguration(navController.graph,drawerLayout)

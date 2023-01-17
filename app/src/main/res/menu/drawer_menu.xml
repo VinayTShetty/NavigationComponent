@@ -3,8 +3,8 @@
 
     <group >
         <item android:title="Frsit Fragment"
-            android:id="@+id/menu_frist_fragment"/>
+            android:id="@+id/frist"/>
         <item android:title="Second Fragment"
-            android:id="@+id/menu_second_fragment"/>
+            android:id="@+id/second"/>
     </group>
 </menu>
