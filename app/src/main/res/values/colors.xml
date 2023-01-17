@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue_light">#8895C1</color>
     <color name="oragne_light">#CA986C</color>
+    <color name="frist_fragment_action_bar">#A6DC92</color>
+    <color name="second_fragment_action_bar">#7BDFCE</color>
 </resources>
