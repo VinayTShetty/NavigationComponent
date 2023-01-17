@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item android:title="Frsit Fragment"
+            android:id="@+id/frist"/>
+        <item android:title="Second Fragment"
+            android:id="@+id/second"/>
+    </group>
+</menu>
