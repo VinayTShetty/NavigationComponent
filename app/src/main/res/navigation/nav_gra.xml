@@ -27,6 +27,7 @@
         <argument
             android:name="number"
             app:argType="integer"
+            android:defaultValue="100"
             />
     </fragment>
 </navigation>

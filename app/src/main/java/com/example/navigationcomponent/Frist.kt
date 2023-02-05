@@ -17,5 +17,4 @@ class Frist : Fragment() {
         }
         return view
     }
-
 }
