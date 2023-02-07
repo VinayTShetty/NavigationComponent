@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Destination">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imagesource_dest_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_question_mark_24"
+        android:layout_centerInParent="true">
+    </ImageView>
+    <TextView
+        android:id="@+id/txtVw_received_data_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="NULL"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textAllCaps="false"
+        android:layout_below="@id/imagesource_dest_id"
+        />
+</RelativeLayout>

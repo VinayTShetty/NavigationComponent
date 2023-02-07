@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/source">
+
+    <fragment
+        android:id="@+id/source"
+        android:name="com.example.navigationcomponent.Source"
+        android:label="fragment_source"
+        tools:layout="@layout/fragment_source" >
+        <action
+            android:id="@+id/action_source_to_destination"
+            app:destination="@id/destination" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination"
+        android:name="com.example.navigationcomponent.Destination"
+        android:label="fragment_destination"
+        tools:layout="@layout/fragment_destination" >
+        <action
+            android:id="@+id/action_destination_to_source"
+            app:destination="@id/source" />
+        <argument
+            android:name="currentuser"
+            app:argType="com.example.navigationcomponent.model.User" />
+    </fragment>
+</navigation>
