@@ -10,10 +10,27 @@
         android:label="SplashScreen" >
         <action
             android:id="@+id/action_splashScreen_to_viewPagerFragment"
-            app:destination="@id/viewPagerFragment" />
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreen_to_homeScreen"
+            app:destination="@id/homeScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
         android:name="com.example.navigationcomponent.viewpager.ViewPagerFragment"
-        android:label="ViewPagerFragment" />
+        android:label="ViewPagerFragment" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_homeScreen"
+            app:destination="@id/homeScreen"
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.navigationcomponent.screens.HomeScreen"
+        android:label="HomeScreen" />
 </navigation>

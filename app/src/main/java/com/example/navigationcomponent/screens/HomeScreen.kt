@@ -12,10 +12,10 @@ import com.example.navigationcomponent.R
 
 /**
  * A simple [Fragment] subclass.
- * Use the [FristScreen.newInstance] factory method to
+ * Use the [HomeScreen.newInstance] factory method to
  * create an instance of this fragment.
  */
-class FristScreen : Fragment() {
+class HomeScreen : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -24,11 +24,7 @@ class FristScreen : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_frist_screen, container, false)
-        val viewpager=activity?.findViewById<ViewPager2>(R.id.viewpager_id)
-        view.findViewById<Button>(R.id.next_button_id).setOnClickListener({
-                viewpager?.currentItem=1
-        })
+        val view = inflater.inflate(R.layout.fragment_home_screen, container, false)
         return view
     }
 }
